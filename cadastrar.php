@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="stylesheet" href="cadastrar.css">
     <title>Cadastro</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
@@ -54,7 +54,7 @@
     <div class="form-container">
         <div class="form-box">
             <h2>Cadastro</h2>
-            <form action="#" method="POST">
+            <form action="processa_cadastro.php" method="POST">
                 <div class="input-group">
                     <label for="name">Nome</label>
                     <input type="text" id="name" name="name" placeholder="Digite seu nome completo" required>
@@ -75,7 +75,7 @@
                     <label for="dob">Data de Nascimento</label>
                     <input type="date" id="dob" name="dob" required>
                 </div>
-                <button type="submit">Cadastrar</button>s
+                <button type="submit">Cadastrar</button>
                 </form>
                 
             </div>
