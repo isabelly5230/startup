@@ -1,0 +1,192 @@
+/* Resetando margin e padding */
+/* Resetando margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a cor de fundo do corpo e estilo de fonte */
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img.home.png.png);/* Cor de fundo mais suave */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container de pesquisa */
+.search-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Caixa de pesquisa */
+.search-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 1000px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.search-box input {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #dcdcdc;
+    border-radius: 30px;
+    outline: none;
+    margin-bottom: 20px;
+    transition: border-color 0.3s;
+}
+
+.search-box input:focus {
+    border-color: #4abddd;
+}
+
+.search-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-actions button {
+    background-color: #4abddd;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-actions button:hover {
+    background-color: #3498db;
+    padding-top: 50px;
+}
+
+/* Resultados da pesquisa */
+.results-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.results-container h3 {
+    color: #60a6cc;
+    margin-bottom: 15px;
+}
+
+.results-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.results-list li {
+    margin-bottom: 20px;
+}
+
+.results-list li a {
+    color: #4abddd;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.results-list li a:hover {
+    color: #043d65;
+}
+
+/* Menu lateral */
+nav.menu-lateral {
+    width: 60px;
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 3px 0 0 rgb(89, 212, 250);
+    transition: width 0.3s ease;
+    z-index: 1000;
+}
+
+nav.menu-lateral.expandir {
+    width: 250px;
+}
+
+nav.menu-lateral .btn-expandir {
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav.menu-lateral .btn-expandir i {
+    color: #4abddd;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+ul li.item-menu {
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+ul li.item-menu a {
+    display: flex;
+    align-items: top;
+    color: #4abddd;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: padding-left 0.3s ease, opacity 0.3s ease;
+}
+
+ul li.item-menu a i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+ul li.item-menu:hover {
+    background-color: #f0f0f0;
+}
+
+ul li.item-menu .txt-link {
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.3s ease;
+}
+
+nav.menu-lateral.expandir li.item-menu a .txt-link {
+    opacity: 1; /* Torna o texto visível quando expandido */
+}
+
+nav.menu-lateral.expandir {
+    width: 250px;
+}
+
+nav.menu-lateral li.ativo {
+    background-color: #73d5fb;
+}
+
+
+

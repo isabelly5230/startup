@@ -1,0 +1,161 @@
+/* Resetando margin e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo a cor de fundo do corpo e estilo de fonte */
+body {
+    font-family: 'Arial', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img.fundo.canvaa.png);
+    background-size: 1600px;
+}
+
+/* Container do formulário de cadastro */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+}
+
+/* Caixa de formulário */
+.form-box {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(90, 168, 224, 0.1);
+    width: 300px;
+    text-align: center;
+    border: 2px solid white;
+    background: transparent;
+}
+
+h2 {
+    color: #60a6cc; /* Azul mais escuro para o título */
+    margin-bottom: 20px;
+}
+
+/* Estilo para os campos de entrada */
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 14px;
+    color: #4abddd;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+input:focus {
+    border-color: #3eabd6;
+    outline: none;
+}
+
+/* Estilo para o botão */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #51a7d5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Menu lateral */
+nav.menu-lateral {
+    width: 60px; /* Começo com a largura pequena (só ícone) */
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 3px 0 0 rgb(89, 212, 250);
+    transition: width 0.3s ease; /* Transição suave para expansão */
+    z-index: 1000;
+}
+
+nav.menu-lateral.expandir {
+    width: 250px; /* Largura quando expandido */
+}
+
+nav.menu-lateral .btn-expandir {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav.menu-lateral .btn-expandir i {
+    color: #4abddd;
+    font-size: 24px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+ul li.item-menu {
+    transition: background 0.3s ease, padding 0.3s ease;
+}
+
+ul li.item-menu a {
+    display: flex;
+    align-items: center;
+    color: #083a48 ;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: padding-left 0.3s ease, opacity 0.3s ease;
+}
+
+ul li.item-menu a i {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+ul li.item-menu:hover {
+    background-color: #f0f0f0;
+}
+
+ul li.item-menu .txt-link {
+    opacity: 0; /* Inicia invisível */
+    transition: opacity 0.3s ease;
+}
+
+nav.menu-lateral.expandir li.item-menu a .txt-link {
+    opacity: 1; /* Torna o texto visível quando expandido */
+}
+
+nav.menu-lateral.expandir {
+    width: 250px;
+}
+
+nav.menu-lateral li.ativo {
+    background-color: #73d5fb;
+}
